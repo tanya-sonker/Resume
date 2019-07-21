@@ -1,0 +1,225 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Tanya - One Page Two Column Resume
+% LaTeX Template
+% Version 2.0 (7/21/2019)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\namesection{Tanya}{Sonker} \\
+\href{mailto:tsonker@scu.edu}{tsonker@scu.edu} | 408.759.0023
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{Santa Clara University}
+\descript{BSc in Computer Science}
+\location{Expected June 2020 | Santa Clara, CA}
+Emphasis in Software \\
+College of Arts and Sciences
+\sectionsep
+
+\subsection{Jamnabai Narsee  \\ 
+International School}
+\descript{International Baccalaureate}
+\location{Grad. June 2016 |  Mumbai, India}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+\location{Proficient:}
+C++ \textbullet{}  SuperCollider \\
+\location{Working Experience:}
+HTML \textbullet{}  CSS  \textbullet{} JavaScript \textbullet{} 
+Node.js \\
+\textbullet{} Go \textbullet{} Docker \textbullet{}
+C \textbullet{} Git \textbullet{} Python \\
+\textbullet{} Java \textbullet{} Scala \\
+\location{Familiar:}
+\textbullet{} MySQL \textbullet{} \LaTeX\ \textbullet{} Kubernetes 
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+\subsection{Computer Science}
+Experimental Sound Design in SuperCollider \\
+Santa Clara Laptop Orchestra \\
+Theory of Algorithms \\
+Data Structures \\
+Object Oriented Programming \\
+{\footnotesize \textit{\textbf{(Teaching Assistant)}}}\\
+Introduction to C++ \\
+{\footnotesize \textit{\textbf{(Former Teaching Assistant)}}}
+\sectionsep
+
+\subsection{Mathematics}
+Probability + Statistics \\
+Discrete Mathematics \\
+Linear Algebra \\
+Multivariable Calculus \\
+Single variable Calculus
+\sectionsep
+
+\subsection{Engineering}
+Community-Based Engineering Design\\
+STEM Outreach in the Community \\
+Computer Networks \\
+Introduction to Embedded Systems \\
+Introduction to Logic Design 
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+GitHub://  \href{https://github.com/tanya-sonker}{\custombold{tanya-sonker}} \\
+LinkedIn://  \href{https://www.linkedin.com/in/tanya-sonker}{\custombold{tanya-sonker}} \\
+SCCode://  \href{https://sccode.org/tsonker}{\custombold{tsonker}} \\
+Maker://  \href{https://tsonker.wixsite.com/efolio}{\custombold{efolio}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+
+\runsubsection{Software Engineer Intern}
+\descript{| The Fabric}
+\location{June 2019 - Present | Santa Clara, CA}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}\item Rebuilding an \href{https://microservices-demo.github.io/}{\custombold{existing}} microservices demo web application for a Cloud/IoT security startup in stealth mode backed by \href{http://www.thefabricnet.com/}{\custombold{The Fabric}}.
+\item Redesigned UI elements and developed the front-end of the \href{https://github.com/tanya-sonker/KupcakeShop}{\custombold{revamped demo}}. 
+\item Improved the demo by designing and implementing text receipt functionality using the Twilio REST API.
+\item Debugged to eliminate high/critical security vulnerabilities and minimize low  security vulnerabilities in package dependencies.
+\item Working with this open-source project required knowledge of web development and related frameworks, microservices, HTTP protocols, Go, Docker, and Git.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{CS Teaching Assistant}
+\descript{| Santa Clara University}
+\location{Jan 2018 - June 2019 | Santa Clara, CA}
+\begin{tightemize}\item Taught programming concepts, mentored, and reviewed and helped debug about 15 students' C++ code every lab session. \item Weekly met with and aided Dr.  \href{https://math.scu.edu/~linnell/}{\custombold{Natalie Linnell}} and another TA with CSCI 60 lab [Object Oriented Programming] and CSCI 10 lab [Introduction to C++]. 
+\item All SCU courses are taught solely by faculty and so, students can only be hired as Lab Teaching Assistants.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Sound Designer}
+\descript{| Santa Clara Laptop Orchestra}
+\location{Jan 2018 - Present | Santa Clara, CA}
+\begin{tightemize}
+% \vspace{\topsep} % Hacky fix for awkward extra vertical space
+\item Code synth definitions and experiment with and live code algorithmic compositions in SuperCollider to perform electronic music pieces for school's Laptop Orchestra [ \href{https://www.youtube.com/watch?v=UorZXvhU6uI}{\custombold{SCLOrk}}] \item 1 of 4 students chosen to be in Dr.  \href{https://works.bepress.com/bruno-ruviaro/about/}{\custombold{Bruno Ruviaro}}'s pilot program to extend \href{https://www.youtube.com/watch?v=UorZXvhU6uI}{\custombold{SCLOrk}}'s performance from one quarter on-campus to the entire academic year and off-campus. \item Collaborate with Google developers and local musicians on compositions.\item Diversify ensemble by referring prospective female ensemble members. \end{tightemize}
+\sectionsep
+
+\section{Software Projects}
+\runsubsection{Sound Design Workshop Creator}
+\descript{| R F Kennedy Elementary}
+\location{Feb 2019 | San Jose, CA}
+\begin{tightemize}
+\item Developed and conducted a workshop on Granular Sampling with 24 of R F Kennedy Elementary's 5th and 6th graders.  
+\item Created the   \href{https://github.com/tanya-sonker/sound-design-workshop}{\custombold{code}} for each sample which included creating a synth definition to load audio samples and Pbindefs to define parameters to control aspects of samples like playback rate, duration, etc.   
+\item Developed workshop to adapt to restraints introduced by a lower socio-economic environment such as a lack of computer literacy, loudspeakers, headphones, and strong internet connection.
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%    INVOLVEMENT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Engineering Projects}
+\runsubsection{Maker}
+\descript{| Rocketship Mosaic Elementary School}
+\begin{tightemize}
+\item Led Research and Development in a team of three to build a \href{https://littlefreelibrary.org}{\custombold{Little Free Library}}(public bookcase) for a school which lacked a library.
+\end{tightemize}
+\sectionsep
+
+\end{minipage} 
+\end{document}
