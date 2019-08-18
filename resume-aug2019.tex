@@ -1,0 +1,161 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% Website: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    {#2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{http://linkedin.com/in/tanya-sonker}{\Large Tanya Sonker}} & Email : \href{mailto:tsonker@scu.edu}{tsonker@scu.edu}\\
+  \href{https://tanya-sonker.github.io/}{\color{blue}{https://tanya-sonker.github.io}} & GitHub : \href{www.github.com/tanya-sonker}{\color{blue}{tanya-sonker}} \\
+ 
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Santa Clara University}{Santa Clara, CA}
+      {Bachelor of Science in Computer Science}{Expected June 2020}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {The Fabric}{Sunnyvale, CA}
+      {Software Engineer Intern}{June 2019 -- Aug 2019}
+      \resumeItemListStart
+        \resumeItem{}
+          {Rebuilt open-source project \href{https://microservices-demo.github.io/}{\color{blue}{Sock Shop}}, a microservices demo web application, for a container security startup in stealth mode backed by The Fabric.
+          }
+        \resumeItem{}
+          {Redesigned UI elements and developed the front-end of the revamped demo.}
+        \resumeItem{}{Improved the demo by designing and implementing text receipt functionality using the Twilio API.}
+        \resumeItem{}{Debugged to eliminate critical security vulnerabilities in package dependencies.}
+        \resumeItem{}{Added support for SQL injection vulnerability.}
+        \resumeItem{}{Built and maintained codebase on GitHub; Distributed container images on Docker Hub.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Santa Clara University}{Santa Clara, CA}
+      {Computer Science Teaching Assistant}{Jan 2018 -- June 2019}
+      \resumeItemListStart
+        \resumeItem{}
+          {Taught programming concepts and helped debug about 15 students' C++ code every lab session.}
+        \resumeItem{}
+          {Weekly met with and aided Dr.  \href{https://math.scu.edu/~linnell/}{\color{blue}{Natalie Linnell}} and another TA with CSCI 60 [Object Oriented Programming] and CSCI 10 [Introduction to C++] labs.
+          }
+        \resumeItem{}
+          {All SCU undergraduate courses are taught solely by faculty and so, students can only be hired as Lab Teaching Assistants.}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Santa Clara Laptop Orchestra (SCLOrk)}{Santa Clara, CA}
+      {Computer Musician}{Jan 2018 -- Present}
+      \resumeItemListStart
+        \resumeItem{} {Code synth definitions and experiment with as well as live code algorithmic compositions in SuperCollider to perform electronic music pieces for school's Laptop Orchestra (\href{https://www.youtube.com/watch?v=UorZXvhU6uI}{\color{blue}{SCLOrk}}).}
+        \resumeItem{}{1 of 4 students chosen to be in Dr.  \href{https://works.bepress.com/bruno-ruviaro/about/}{\color{blue}{Bruno Ruviaro}}'s pilot program to extend SCLOrk's performance from one quarter on-campus to the entire academic year and off-campus.} \resumeItem{} {Collaborate with Google developers and local musicians on compositions.}
+        \resumeItem{} {Diversify ensemble by referring prospective female ensemble members.}
+      \resumeItemListEnd
+
+%-----------PROJECTS-----------------
+\section{Projects} 
+    \resumeSubheading{R F Kennedy Elementary School}{San Jose, CA}
+    {Sound Design Workshop Creator}{Feb 2019}
+        \resumeItemListStart
+        \resumeItem{}{Developed and conducted a workshop on Granular Sampling with 24 of R F Kennedy Elementary's 5th and 6th graders.}
+        \resumeItem{} {Created the   \href{https://github.com/tanya-sonker/sound-design-workshop}{\color{blue}{code}} for each sample which included creating a synth definition to load audio samples and Pbindefs to define parameters to control aspects of samples like playback rate, duration, etc. }  
+        \resumeItem{} {Developed workshop to adapt to restraints introduced by a lower socio-economic environment such as a lack of computer literacy, loudspeakers, headphones, and strong internet connection.}
+  \resumeItemListEnd
+
+
+
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+ \resumeItemListStart
+   \resumeItem{}{
+     \textbf{Languages}{: Proficient in C++, SuperCollider; experience with: HTML, CSS, JavaScript, Golang; previously used: C, Java, Python, Scala; familiar with: MySQL, LaTex}
+     }
+     \resumeItem{}{
+     \textbf{Technologies}{: Experience with: Node.js, Bootstrap, Docker, Git, MongoDB; familiar with: Kubernetes}
+   }
+ \resumeItemListEnd
+
+\section{Awards}
+    \resumeItemListStart
+\resumeItem{}{Awarded the competitive student scholarship (full-ride) to attend the \href{https://ghc.anitab.org/2019-student-academic/scholarships/} {\color{blue}Grace Hopper Celebration} 2019.}
+  \resumeItemListEnd
+%-------------------------------------------
+\end{document}
